@@ -22,7 +22,7 @@
                             <div>{{post.body}}</div>
                                     <div class="buttons">
 
-                                        <a href="{% url 'edit_post' %}" class="button is-outline">
+                                        <a href="{% url 'edit_post' post.pk %}" class="button is-outline">
                                             <span class="icon">    
                                             <i class="fas fa-edit"> </i>
                                         </span>
@@ -31,7 +31,7 @@
                                     
                                     
                                     <span class="icon">
-                                        <a href="{% url 'delete_post' %}" class="button is-outline">
+                                        <a href="{% url 'delete_post' post.pk %}" class="button is-outline">
                                             <span class="icon">
                                                 <i class="fas fa-trash-alt"></i> 
                                             </span>
